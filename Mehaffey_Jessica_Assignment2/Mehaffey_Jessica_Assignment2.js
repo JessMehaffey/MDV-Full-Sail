@@ -10,8 +10,13 @@
 
 // Set Variables
 var strName = "Jessica";
-var arrNumbers = [10, 12, 23, 24, 35];
+var arrFlavors = ["Vanilla", "Chocolate", "Oreo", "Red Velvet", "Cookie Dough"];
+var arrToppings = ["Once you decorate them, roll them in rainbow sprinkles!", "Chocolate chips go in the batter- don't forget!", "Half of an Oreo cookie goes in the liner before you add the batter!", "This is the only cupcake that gets cream cheese icing!", "Don't eat the raw cookie dough! ...I'm kidding. Give me a scoop!",];
 var addOutcome;
+
+// Main Code Section 1
+console.log("Good Morning! Hope you are ready to get coated in batter! Things are getting hectic around here, and we need everybody wide awake and ready to work!");
+console.log("My name is " + strName + " and I'm in charge this morning! Get the eggs out of the fridge and meet me by the mixers, ASAP!");
 
 // Addition Function
 var addition = function(firstNumber, secondNumber){
@@ -27,11 +32,8 @@ var countDown = function(cupcakes){
 	for (cupcakes > 0){
 		console.log(cupcakes + " dozen cupcakes still need baked and decorated!");
 		console.log("When you think about it, " + cupcakes + " dozen cupcakes really won\'t take too long to bake!"
-		cupcakes = cupcakes - 1;
+		cupcakes--; // Value of cupcakes decreases by 1 each time
 		
-		if (cupcakes === 25){
-			break;
-		};
 		
 		if (cupcakes > 0){
 			console.log(cupcakes + "left to bake!");
@@ -42,8 +44,12 @@ var countDown = function(cupcakes){
 	
 };
 
-// If Loop
+
+// Loop
+for (var i=0; j = arrFlavors.length; i < j; i++) {
+	console.log("Have we made " + arrFlavors[i] + " cupcakes yet? " + arrToppings[i] );
+};
 
 
-// Main Code
+// Main Code Section 2
 console.log("I can\'t believe we have baked " + addition(100 + 4) + "cupcakes already! We\'ve been busy bees!");
