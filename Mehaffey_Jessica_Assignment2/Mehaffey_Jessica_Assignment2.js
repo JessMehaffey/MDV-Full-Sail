@@ -11,12 +11,12 @@
 // Set Variables
 var strName = "Jessica";
 var arrFlavors = ["Vanilla", "Chocolate", "Oreo", "Red Velvet", "Cookie Dough"];
-var arrToppings = ["Once you decorate them, roll them in rainbow sprinkles!", "Chocolate chips go in the batter- don't forget!", "Half of an Oreo cookie goes in the liner before you add the batter!", "This is the only cupcake that gets cream cheese icing!", "Don't eat the raw cookie dough! ...I'm kidding. Give me a scoop!",];
+var arrToppings = ["Once you decorate them, roll them in rainbow sprinkles!", "Chocolate chips go in the batter- don\'t forget!", "Half of an Oreo cookie goes in the liner before you add the batter!", "This is the only cupcake that gets cream cheese icing!", "Don\'t eat the raw cookie dough! ...I\'m kidding. Give me a scoop!",];
 var addOutcome;
 
 // Main Code Section 1
 console.log("Good Morning! Hope you are ready to get coated in batter! Things are getting hectic around here, and we need everybody wide awake and ready to work!");
-console.log("My name is " + strName + " and I'm in charge this morning! Get the eggs out of the fridge and meet me by the mixers, ASAP!");
+console.log("My name is " + strName + " and I\'m in charge this morning! Get the eggs out of the fridge and meet me by the mixers, ASAP!");
 
 // Addition Function
 var addition = function(firstNumber, secondNumber){
