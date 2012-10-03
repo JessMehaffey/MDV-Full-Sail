@@ -6,6 +6,7 @@
 // Personal Notes:
 // Make sure ";" ends every line!
 // Arrays start with place 0!
+// Always add \escapes when including quotes and apostrophes!
 
 // Set Variables
 var strName = "Jessica";
@@ -41,6 +42,7 @@ var countDown = function(cupcakes){
 	
 };
 
+// If Loop
 
 
 // Main Code
