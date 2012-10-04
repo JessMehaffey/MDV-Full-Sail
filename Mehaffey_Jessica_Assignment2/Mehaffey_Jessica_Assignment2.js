@@ -31,7 +31,7 @@ var countDown = function(cupcakes){
 
 	for (cupcakes > 0){
 		console.log(cupcakes + " dozen cupcakes still need baked and decorated!");
-		console.log("When you think about it, " + cupcakes + " dozen cupcakes really won\'t take too long to bake!"
+		console.log("When you think about it, " + cupcakes + " dozen cupcakes really won\'t take too long to bake!");
 		cupcakes--; // Value of cupcakes decreases by 1 each time
 		
 		
