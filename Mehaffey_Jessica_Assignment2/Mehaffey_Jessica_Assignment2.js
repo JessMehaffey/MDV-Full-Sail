@@ -26,11 +26,17 @@ var addition = function(firstNumber, secondNumber){
 };
 
 // While Loop
-// Note to self: Fix this and figure it out!
 var flavorCountDown = function(flavors)
 	while (flavors < 5){
-		console.log(flavors + " left to bake!");
-		
+		console.log("We still have cupcakes left to bake!");
+		flavors --;
+			
+			if (flavors < 5) {
+				console.log("Keep up the good work! We still have " + flavors + " left to bake and decorate!");
+			} else {
+				console.log("Great job! All of the flavors are baked!");
+			};
+		};
 	
 	};
 
