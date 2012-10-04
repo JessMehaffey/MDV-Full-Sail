@@ -12,7 +12,7 @@
 var strName = "Jessica";
 var arrFlavors = ["Vanilla", "Chocolate", "Oreo", "Red Velvet", "Cookie Dough"];
 var arrToppings = ["Once you decorate them, roll them in rainbow sprinkles!", "Chocolate chips go in the batter- don\'t forget!", "Half of an Oreo cookie goes in the liner before you add the batter!", "This is the only cupcake that gets cream cheese icing!", "Don\'t eat the raw cookie dough! ...I\'m kidding. Give me a scoop!",];
-var addOutcome;
+var bakeAllCupcakes;
 
 // Beginning Text
 console.log("Good Morning! Hope you are ready to get coated in batter! Things are getting hectic around here, and we need everybody wide awake and ready to work!");
@@ -26,7 +26,7 @@ var addition = function(firstNumber, secondNumber){
 };
 
 // While Loop
-var flavorCountDown = function(flavors)
+var flavorCountDown = function(flavors){
 	while (flavors < 5){
 		console.log("We still have cupcakes left to bake!");
 		flavors --;
@@ -41,29 +41,24 @@ var flavorCountDown = function(flavors)
 	};
 
 
-
 // For Loop	
 for (var flavorsFinished = 0; flavorsFinished < arrFlavors.length; flavorsFinished++) {
-	console.log( + " flavors of cupcakes still need baked and decorated!");
-	console.log("When you think about it, " + flavorsFinished + " flavors of cupcakes really won\'t take too long to bake!");
+	flavorsFinished++;
+	console.log("The " + arrFlavors[0] + " cupcakes still need baked and decorated!");
+	console.log("You already have " + flavorsFinished + " flavors baked? Wow!");
 	flavorsFinished++; // Value of flavorsFinished increases by 1 each time
 		
 		
-	if (flavors === 5){
-		console.log("Put down your oven mitt- we\'re done baking for the day!")
+	if (flavorsFinished === 5){
+		console.log("You already finished every flavor?! Put down your oven mitt- we\'re done baking for the day!")
 	} else {
-		console.log(flavorsFinished + "flavors left to bake! Get on it!");
+		console.log(flavorsFinished + " flavors left to bake! Get on it!");
 	};
 };
 	
 
 
-// Loop
-for (var i=0; j = arrFlavors.length; i < j; i++) {
-	console.log("Have we made " + arrFlavors[i] + " cupcakes yet? " + arrToppings[i] );
-};
-
-
 // Main Code
-bakeAllCupcakes(arrFlavors, arrToppings);
+function bakeAllCupcakes(arrFlavors, arrToppings){
 console.log("I can\'t believe we have baked " + addition(100 + 4) + "cupcakes already! We\'ve been busy bees!");
+};
