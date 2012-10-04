@@ -29,14 +29,14 @@ var addition = function(firstNumber, secondNumber){
 // While Loop
 var countDown = function(cupcakes){
 
-	for (cupcakes > 0){
-		console.log(cupcakes + " dozen cupcakes still need baked and decorated!");
-		console.log("When you think about it, " + cupcakes + " dozen cupcakes really won\'t take too long to bake!");
-		cupcakes--; // Value of cupcakes decreases by 1 each time
+	for (var flavorsFinished = 0; flavorsFinished < arrFlavors.length; flavorsFinished++) {
+		console.log( + " flavors of cupcakes still need baked and decorated!");
+		console.log("When you think about it, " + flavorsFinished + " flavors of cupcakes really won\'t take too long to bake!");
+		flavorsFinished++; // Value of flavorsFinished increases by 1 each time
 		
 		
 		if (cupcakes > 0){
-			console.log(cupcakes + "left to bake!");
+			console.log(flavorsFinished + "flavors left to bake!");
 		} else {
 			console.log("Put down your oven mitt- we\'re done baking for the day!");
 		};
