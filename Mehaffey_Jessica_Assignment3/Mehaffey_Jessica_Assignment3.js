@@ -8,12 +8,16 @@
 // Arrays start with place 0!
 // Always add \escapes when including quotes and apostrophes!
 
-// Set Variables
-// var ______ = ""
+// Global Variables
+// Used Code-wide
+// Example: var ______ = ""
 
 
 // Output Log
 // This contains the console.log text that will show up upon running the program
 
 
-// If/Else/Then Section
+// If Loop
+
+
+// While Loop
