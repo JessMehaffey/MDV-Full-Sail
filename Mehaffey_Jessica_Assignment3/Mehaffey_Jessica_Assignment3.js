@@ -12,12 +12,13 @@
 // Used Code-wide
 
 var NewEmployee = "that new chick"
-var EmployeesScheduled = "6"
+var EmployeesScheduled = 6
 var ScheduleComplete = true
+var FilesToFile = 3
 
 // Output Log
 // This contains the console.log text that will show up upon running the program
-
+console.log("It\'s a great day to be a manager! Let\'s see what paperwork I have to do today!")
 
 // If Loop
 if (ScheduleComplete === true){
@@ -39,3 +40,7 @@ if (ScheduleComplete === true){
 };
 
 // While Loop
+while (FilesToFile < 14) {
+document.write("Better get busy! Still have " + FilesToFile + " files to file!");
+FilesToFile++;
+}
