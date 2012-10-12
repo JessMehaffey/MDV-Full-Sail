@@ -47,8 +47,27 @@ if (ScheduleComplete === true){
 	};
 };
 
+// Boolean
+function PaperworkFiled(){
+	var PaperworkFiled = false
+	if(PaperworkFiled === false){
+		console.log("I have to file a ton of paperwork today.");
+	} else {
+		console.log("Looks like I don't have to file any paperwork!");
+	}
+};
+
+// Array
+var Array = ["schedule", "assorted paperwork", "file paperwork"];
+console.log("I have " + Array.length + " tasks to finish today.");
+console.log("I have already finished the " + Array[0] + ", so I should probably start on the " + Array[1] + " that I have left!");
+
 // While Loop
+console.log("I have to file a total of 14 files, and 2 files are already filed. I better hurry up!");
 while (FilesToFile < 14) {
-	console.log("Better get busy! At least I have " + FilesToFile + " files filed!");
+	console.log("Another file filed! That makes " + FilesToFile + " files filed so far!");
 FilesToFile++;
 }
+
+console.log("Well, all " + FilesToFile + " files are finally filed! Wow, that\'s a tongue twister!");
+console.log("I should probably clock-out and get home so I can rest up for tomorrow. Lots of cakes are due!");
