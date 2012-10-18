@@ -14,7 +14,7 @@
 var NewEmployee = "that new chick"
 var EmployeesScheduled = 6
 var ScheduleComplete = true
-var FilesToFile = 3
+var FilesToFile = 8
 
 console.log("It\'s a great day to work! I can\'t wait to get started with all my paperwork!");
 console.log("I should probably turn the laptop on first...");
@@ -63,7 +63,7 @@ console.log("I have " + Array.length + " tasks to finish today.");
 console.log("I have already finished the " + Array[0] + ", so I should probably start on the " + Array[1] + " that I have left!");
 
 // While Loop
-console.log("I have to file a total of 14 files, and 2 files are already filed. I better hurry up!");
+console.log("I have to file a total of 14 files, and 7 files are already filed. I better hurry up!");
 while (FilesToFile < 14) {
 	console.log("Another file filed! That makes " + FilesToFile + " files filed so far!");
 FilesToFile++;
