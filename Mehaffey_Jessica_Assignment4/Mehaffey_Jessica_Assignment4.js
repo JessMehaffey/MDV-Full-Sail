@@ -53,12 +53,15 @@ var myLibrary = function(){
 	// Split into words, then uppercase first letter of each word
 	// FIX ME
 	var checkTitleCase = function(titleCase){
-		}
+
+	}
 		
 	// Decimal Format
 	// Format number to use specific number of decimal places (2.1 to 2.10)
 	// FIX ME
 	var checkDecimalFormat = function(decimalFormat){
+		number.toPrecision(3);
+		console.log(number + " has been converted to " + number.toPrecision(3));
 		}
 		
 	// Find Time Difference Between 2 Dates
