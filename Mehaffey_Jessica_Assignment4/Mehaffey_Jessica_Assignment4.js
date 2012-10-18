@@ -21,21 +21,24 @@ var myLibrary = function(){
 	
 	};
 
-	return {
-		"checkPhone" : checkPhone,
-		};
-
 
 	// Email Validator
 	// Does string follow pattern (aaa@bbb.ccc) like email?
 	var checkEmail = function(email){
-		var emailFormat = ([A-Z, a-z, 0-9, _]) + "@" ([A-Z, a-z, 0-9, _]) + "." ([A-Z, a-z]); {2,4};
-		if (emailFormat.test(eMail) === true) {
+		var emailFormat = eMail.val
+		if ( /(.+)@(.+){2,}\.(.+){2,}/.test(email) === true) {
 			console.log("A valid email address was entered.");
 		} else {
 			console.log("An invalid email address was entered. Please try again.");
 		}
+		
+		
 	};
+	
+	return {
+		"checkPhone" : checkPhone,
+		"checkEmail" : checkEmail
+		};
 };
 
 
@@ -46,8 +49,7 @@ var myLibrary = function(){
 var newLib = new myLibrary();
 
 console.log("The first dash is in position " + newLib.checkPhone(phoneNumber) + ", and the second dash is in position " + newLib.checkPhone("1230456-7890") + ". Therefore, " + phoneNumber + " is a valid phone number.");
-
-
+console.log("The email " + newLib.checkEmail(eMail) + " is valid.");
 
 // Does string follow pattern (aaa@bbb.ccc) like an email?
 
@@ -57,4 +59,4 @@ console.log("The first dash is in position " + newLib.checkPhone(phoneNumber) + 
 
 // Format number to use specific number of decimal places ((like money, 2.1 = 2.10)
 
-// Find the number of hours or days difference between two dates.
+// Find the number of hours or days difference between two dates
