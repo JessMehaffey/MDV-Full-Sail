@@ -7,9 +7,12 @@
 // Don't forget semicolons!
 var phoneNumber = "123-456-7890";
 var eMail = "blahblah@gmail.com";
-var URL = "http://www.blahblah.com";
+var URL = "http://www.facebook.com";
 var wordsTitleCase = "This has been converted to Title case.";
 var number = 5.3
+var firstDate = new Date(2003, 3, 14);
+var secondDate = new Date(2008, 0, 12);
+var difference = firstDate.getTime() - secondDate.getTime()
 
 var myLibrary = function(){
 	// Phone Number Validator
@@ -58,26 +61,27 @@ var myLibrary = function(){
 		
 	// Decimal Format
 	// Format number to use specific number of decimal places (2.1 to 2.10)
-	// FIX ME
 	var checkDecimalFormat = function(decimalFormat){
 		number.toPrecision(3);
 		console.log(number + " has been converted to " + number.toPrecision(3));
 		}
 		
 	// Find Time Difference Between 2 Dates
-	// Find number of hours/days between dates
-	// FIX ME	
-	var time = function(timeDifference){
+	// Find number of hours/days between dates	
+	var getDateDifference = function(secondDate, firstDate){
+		var Seconds = difference / 1000;
+		var secondsBetween = Math.abs(Seconds);
 		}
+		
 	
-	//DEFINE THESE
+
 	return {
 		"checkPhone" : checkPhone,
 		"checkEmail" : checkEmail,
 		"checkURL" : checkURL,
 		"checkTitleCase" : checkTitleCase,
 		"checkDecimalFormat" : checkDecimalFormat,
-		"time" : time,
+		"getDateDifference" : getDateDifference,
 		};
 };
 
@@ -86,8 +90,8 @@ var myLibrary = function(){
 var newLib = new myLibrary();
 
 console.log("The first dash is in position " + newLib.checkPhone(phoneNumber) + ", and the second dash is in position " + newLib.checkPhone("1230456-7890") + ". Therefore, " + phoneNumber + " is a valid phone number.");;
-console.log("The email " + newLib.checkEmail(eMail) + " is valid.");
-console.log("The URL " + newLib.checkURL(URL) + " is valid.");
-console.log("The string " + newLib.checkTitleCase(wordsTitleCase) + " has been converted to Title Case!");
+console.log("The email " + newLib.checkEmail("blahblah@gmail.com") + " is valid.");
+console.log("The URL " + newLib.checkURL("http://www.facebook.com") + " is valid.");
+console.log("The string " + newLib.checkTitleCase("look at these words") + " has been converted to Title Case!");
 console.log("The number " + newLib.checkDecimalFormat(number) + " has been converted to decimal format.");
-console.log("There are " + newLib.time(timeDifference) + "days between Wednesday and Saturday.");
+console.log("The difference between " + firstDate + " and " + secondDate + " is " + newLib.getDateDifference(difference));
