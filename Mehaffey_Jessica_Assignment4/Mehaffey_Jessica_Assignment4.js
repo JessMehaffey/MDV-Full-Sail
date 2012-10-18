@@ -56,7 +56,8 @@ var myLibrary = function(){
 	// Split into words, then uppercase first letter of each word
 	// FIX ME
 	var checkTitleCase = function(titleCase){
-
+		wordsTitleCase.toTitleCase;
+		console.log("This Has Been Converted To Title Case.");
 	}
 		
 	// Decimal Format
@@ -89,9 +90,9 @@ var myLibrary = function(){
 
 var newLib = new myLibrary();
 
-console.log("The first dash is in position " + newLib.checkPhone(phoneNumber) + ", and the second dash is in position " + newLib.checkPhone("1230456-7890") + ". Therefore, " + phoneNumber + " is a valid phone number.");;
+console.log("The first dash is in position " + newLib.checkPhone(phoneNumber) + ", and the second dash is in position " + newLib.checkPhone("1230456-7890") + ". Therefore, " + phoneNumber + " is a valid phone number.");
 console.log("The email " + newLib.checkEmail("blahblah@gmail.com") + " is valid.");
 console.log("The URL " + newLib.checkURL("http://www.facebook.com") + " is valid.");
-console.log("The string " + newLib.checkTitleCase("look at these words") + " has been converted to Title Case!");
+console.log("The string " + newLib.checkTitleCase("checkTitleCase") + " has been converted to Title Case!");
 console.log("The number " + newLib.checkDecimalFormat(number) + " has been converted to decimal format.");
 console.log("The difference between " + firstDate + " and " + secondDate + " is " + newLib.getDateDifference(difference));
